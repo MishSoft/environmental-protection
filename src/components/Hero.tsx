@@ -2,13 +2,6 @@
 import React from "react";
 
 const Hero: React.FC = () => {
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about-section");
-    if (aboutSection) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="hero  text-white h-screen flex flex-col items-center justify-center relative">
       <img
@@ -24,10 +17,7 @@ const Hero: React.FC = () => {
           Join us in making a difference. Together, we can protect our planet
           for future generations.
         </p>
-        <button
-          onClick={scrollToAbout}
-          className="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-300"
-        >
+        <button className="bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition duration-300">
           Scroll to About
         </button>
 
