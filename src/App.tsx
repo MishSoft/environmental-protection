@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./pages/About";
 import Resources from "./pages/Resources";
+import Contact from "./pages/Contact";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
