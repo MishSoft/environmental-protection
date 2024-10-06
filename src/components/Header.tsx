@@ -1,5 +1,6 @@
 // src/components/Header.tsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
@@ -7,31 +8,36 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo or Website Title */}
         <div className="text-2xl font-bold">
-          <a href="/">EnviroProtect</a>
+          <Link to="/">EnviroProtect</Link>
         </div>
 
         {/* Navigation Links */}
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <a href="/about" className="hover:text-gray-300">
+              <Link to="/" className="hover:text-gray-300">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-gray-300">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/resources" className="hover:text-gray-300">
+              <Link to="/resources" className="hover:text-gray-300">
                 Resources
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blog" className="hover:text-gray-300">
-                Blog
-              </a>
+              <Link to="/projects" className="hover:text-gray-300">
+                Projects
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-gray-300">
-                Contact
-              </a>
+              <Link to="/contact" className="hover:text-gray-300">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>
