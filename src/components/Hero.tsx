@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <div className="hero  text-white h-screen flex flex-col items-center justify-center relative">
       <img
-        src="/src/assets/bg-image.jpeg"
+        src="/assets/bg-image.jpeg"
         alt="Nature"
         className="absolute top-0 left-0 w-full h-full object-cover "
       />
